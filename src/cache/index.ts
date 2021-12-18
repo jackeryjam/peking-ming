@@ -1,9 +1,14 @@
 import { simpleHash } from "../hash";
 
-export const memorizeAsyncFunc = (
-  func: (...argv: any[]) => Promise<any>,
-  options: { expiry: number; cacheSize } = { expiry: 3000, cacheSize: 100 }
-) => {
+export function memorizeAsyncFunc<
+  AsyncFn extends (...argv: any[]) => Promise<any>
+>(
+  func: AsyncFn,
+  options: { expiry?: number; cacheSize?: number } = {
+    expiry: 3000,
+    cacheSize: 100,
+  }
+) {
   const { expiry, cacheSize } = options;
   const cache: {
     [key: string]: { data: any; updateTime: number; promise?: Promise<any> };
@@ -63,5 +68,5 @@ export const memorizeAsyncFunc = (
     }
 
     return Promise.resolve(result);
-  };
-};
+  } as AsyncFn;
+}
