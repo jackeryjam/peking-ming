@@ -1,0 +1,25 @@
+{
+  "name": "peking-ming",
+  "version": "1.0.0",
+  "description": "北冥工具库",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && tsc-alias -p tsconfig.json",
+    "release": "npx standard-version && npm run build && npm publish",
+    "commit": "git-cz"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "util"
+  ],
+  "devDependencies": {
+    "git-cz": "^4.7.3",
+    "tsc-alias": "^1.3.7",
+    "tsconfig-paths": "^3.10.1",
+    "typescript": "^4.3.5"
+  },
+  "author": "qianguang.zhan",
+  "license": "MIT"
+}
