@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/jackeryjam/peking-ming/compare/v1.4.0...v1.4.1) (2022-01-03)
+
+
+### Bug Fixes
+
+* 🐛 bug ([7559f92](https://github.com/jackeryjam/peking-ming/commit/7559f92832f7b8f3cb99fbe13d82d65076d0d068))
+
 ## [1.4.0](https://github.com/jackeryjam/peking-ming/compare/v1.2.0...v1.4.0) (2022-01-03)
 
 
