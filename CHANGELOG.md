@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/jackeryjam/peking-ming/compare/v1.2.0...v1.4.0) (2022-01-03)
+
+
+### Features
+
+* 🎸 add regex ([cd1c593](https://github.com/jackeryjam/peking-ming/commit/cd1c5938d003eab9eada2dc3e2f929c4c10872c0))
+* 🎸 transformer ([6ccb4b6](https://github.com/jackeryjam/peking-ming/commit/6ccb4b68eafe10e162839e644d729c62167489ca))
+* 🎸 transformer ([eaaed73](https://github.com/jackeryjam/peking-ming/commit/eaaed73db72840abb048270e3806e82e529304fc))
+
 ## 1.3.0 (2021-12-26)
 
 
