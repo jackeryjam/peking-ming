@@ -1,10 +1,16 @@
 const getType = (o: any) => Object.prototype.toString.call(o).slice(8, -1);
 
 export const toCamelStr = (str: string) =>
-  str.replace(/([_\s](.))/g, ($1, $2) => $2.toUpperCase());
+  str.replace(/[_\s](.)/g, ($1) => $1.toUpperCase()).replace(/[_\s]/g, "");
 
 export const toUnderscoreStr = (str: string) => (str: string) =>
   str.replace(/[A-Z](.)/g, ($1) => `_${$1.toLowerCase()}`);
+
+export const toDashStr = (str: string) =>
+  str
+    .trim()
+    .replace(/(\s)/g, () => `-`)
+    .replace(/[A-Z](.)/g, ($1: string) => `-${$1.toLowerCase()}`);
 
 const caseTransformer = (transFunc: Function) => {
   const func = (s: any, recursion = true) => {
@@ -38,3 +44,4 @@ const caseTransformer = (transFunc: Function) => {
 
 export const toCamel = caseTransformer(toCamelStr);
 export const toUnderscore = caseTransformer(toUnderscoreStr);
+export const toDash = caseTransformer(toDashStr);
