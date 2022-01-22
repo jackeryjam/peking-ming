@@ -1,15 +1,15 @@
 import { simpleHash } from "../hash";
+import { sortStringify } from "../string";
+
+export interface MemorizeAsyncFuncOptions {
+  expiry?: number;
+  cacheSize?: number;
+}
 
 export function memorizeAsyncFunc<
   AsyncFn extends (...argv: any[]) => Promise<any>
->(
-  func: AsyncFn,
-  options: { expiry?: number; cacheSize?: number } = {
-    expiry: 3000,
-    cacheSize: 100,
-  }
-) {
-  const { expiry, cacheSize } = options;
+>(func: AsyncFn, options?: MemorizeAsyncFuncOptions) {
+  const { expiry = 3000, cacheSize = 100 } = options || {};
   const cache: {
     [key: string]: { data: any; updateTime: number; promise?: Promise<any> };
   } = {};
@@ -47,8 +47,7 @@ export function memorizeAsyncFunc<
   };
 
   return async function (...args) {
-    const that = this;
-    const key = simpleHash(JSON.stringify(args));
+    const key = simpleHash(sortStringify(args));
 
     let result;
     // 清除过期key值
@@ -57,7 +56,7 @@ export function memorizeAsyncFunc<
     overLimitCacheNum();
 
     if (!cache[key]) {
-      const fetchPromise = func.apply(that, args);
+      const fetchPromise = func.apply(this, args);
       setCache(key, null, fetchPromise);
       result = await fetchPromise;
       setCache(key, result);
