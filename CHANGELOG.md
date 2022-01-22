@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.5.0 (2022-01-22)
+
+
+### Features
+
+* 🎸 初始化北冥仓库 ([2692ae8](https://github.com/jackeryjam/peking-ming/commit/2692ae8ecea5c8aadb785b3a3d99461ded17ef2b))
+* 🎸 add decorator ([4a9e6e5](https://github.com/jackeryjam/peking-ming/commit/4a9e6e5b8539bfcac70a6142bd898d330a6c5ba3))
+* 🎸 add regex ([cd1c593](https://github.com/jackeryjam/peking-ming/commit/cd1c5938d003eab9eada2dc3e2f929c4c10872c0))
+* 🎸 toSafeHtmlText ([e49cacf](https://github.com/jackeryjam/peking-ming/commit/e49cacf542e7b57388196ebbd632109d04552e78))
+* 🎸 transformer ([6ccb4b6](https://github.com/jackeryjam/peking-ming/commit/6ccb4b68eafe10e162839e644d729c62167489ca))
+* 🎸 transformer ([eaaed73](https://github.com/jackeryjam/peking-ming/commit/eaaed73db72840abb048270e3806e82e529304fc))
+
+
+### Bug Fixes
+
+* 🐛 bug ([7559f92](https://github.com/jackeryjam/peking-ming/commit/7559f92832f7b8f3cb99fbe13d82d65076d0d068))
+
 ### [1.4.1](https://github.com/jackeryjam/peking-ming/compare/v1.4.0...v1.4.1) (2022-01-03)
 
 
