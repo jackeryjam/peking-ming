@@ -10,7 +10,8 @@
     "test": "yarn jest"
   },
   "files": [
-    "dist"
+    "dist",
+    "decorator"
   ],
   "keywords": [
     "util"
