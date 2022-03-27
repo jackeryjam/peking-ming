@@ -1,6 +1,6 @@
 {
   "name": "peking-ming",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "北冥工具库",
   "main": "dist/index.js",
   "scripts": {
@@ -28,6 +28,5 @@
   },
   "author": "qianguang.zhan",
   "license": "MIT",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
