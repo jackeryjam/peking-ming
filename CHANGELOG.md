@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/jackeryjam/peking-ming/compare/v1.6.0...v1.7.0) (2022-04-01)
+
+
+### Features
+
+* 🎸 combineMiddleWare ([c91a2a8](https://github.com/jackeryjam/peking-ming/commit/c91a2a8c2b2cbd24cd6cf16e4a5c5bfdac1219a9))
+
 ## [1.6.0](https://github.com/jackeryjam/peking-ming/compare/v1.5.1...v1.6.0) (2022-03-27)
 
 
