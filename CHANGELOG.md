@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/jackeryjam/peking-ming/compare/v1.7.0...v1.8.0) (2022-04-02)
+
+
+### Features
+
+* 🎸 add timeout function ([6016081](https://github.com/jackeryjam/peking-ming/commit/60160816d2fc115f6abb66df27312e8d2ec813b1))
+
 ## [1.7.0](https://github.com/jackeryjam/peking-ming/compare/v1.6.0...v1.7.0) (2022-04-01)
 
 
